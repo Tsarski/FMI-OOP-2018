@@ -83,9 +83,6 @@ public:
 	}
 	void push_back(T data)
 	{
-		Node<T>* temp = new Node<T>(data, nullptr);
-		if (temp)
-		{
 			Node<T> *temp = new Node<T>(data, nullptr);
 			if (this->size == 0)
 			{
@@ -98,7 +95,6 @@ public:
 				this->last = temp;
 			}
 			this->size++;
-		}
 	}
 	void push_front(T data)
 	{
