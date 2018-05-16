@@ -8,7 +8,7 @@ template <typename T>
 struct Node
 {
 	T data;
-	Node *next;
+	Node<T> *next;
 	Node(T data, Node* next)
 	{
 		this->data = data;
